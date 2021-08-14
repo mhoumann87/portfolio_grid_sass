@@ -7,3 +7,12 @@ $ff-ss: 'Six Caps', sans-serif;
 // font weights
 $fw-n: 400;
 $fw-b: 900;
+
+@mixin sans-serif($fs, $ls: 0.3em, $color: #a7a7a7, $tt: uppercase, $lh: 1) {
+  font-size: $fs;
+  letter-spacing: $ls;
+  color: $color;
+  text-transform: $tt;
+  line-height: $lh;
+  font-family: $ff-ss;
+}
