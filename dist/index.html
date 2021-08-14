@@ -1,12 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <section class="hero">
+      <h1><span>Welcome to my</span>Portfolio</h1>
+    </section>
+
+    <section class="welcome">
+      <div class="welcome-left">
+        <img src="./images/welcome-01.png" alt="Welcome Image" />
+      </div>
+
+      <div class="welcome-middle">
+        <h2>Making it happen</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+          dolorem dolor dolore eum reprehenderit eaque porro fugit fugiat animi,
+          quod optio assumenda vel, repudiandae sunt illo magni ipsam quis esse.
+        </p>
+      </div>
+
+      <div class="welcome-right">
+        <img src="./images/welcome-02.png" alt="Welcome Image" />
+      </div>
+    </section>
+
+    <section class="about-me">
+      <img
+        class="about-image"
+        src="./images/joe-portfolio.png"
+        alt="Man with the back to you"
+      />
+
+      <h1 class="about-title">Joe Portfolio</h1>
+      <h2 class="about-subtitle">Designer & Developer</h2>
+      <article class="about-text">
+        <p>
+          I am Singing Wind, Chief of the Martians. I feel like I was mauled by
+          Jesus. Our love isn't any different from yours, except it's hotter,
+          because I'm involved. That's not soon enough! I've got to find a way
+          to escape the horrible ravages of youth. Suddenly, I'm going to the
+          bathroom like clockwork, every three hours. And those jerks at Social
+          Security stopped sending me checks. Now 'I'' have to pay ''them'!
+        </p>
+
+        <p>
+          I am Singing Wind, Chief of the Martians. It's toe-tappingly tragic!
+          Yeah, I do that with my stupidness. I'm sorry, guys. I never meant to
+          hurt you. Just to destroy everything you ever believed in. I saw you
+          with those two "ladies of the evening" at Elzars. Explain that.
+        </p>
+
+        <p>
+          Hello, little man. I will destroy you! Ooh, name it after me!
+          <strong> I feel like I was mauled by Jesus.</strong>
+          <em> Say it in Russian!</em> Then throw her in the laundry room, which
+          will hereafter be referred to as "the brig".
+        </p>
+      </article>
+    </section>
+
+    <section class="portfolio">
+      <h1>My Work</h1>
+
+      <div class="portfolio-items">
+        <!-- Portfolio Item number 1 -->
+        <figure class="portfolio-item featured">
+          <img src="./images/portfolio-01.jpg" alt="Portfolio Item 1" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">
+              A short description could go right here
+            </p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="portfolio-items">
+        <!-- Portfolio Item number 2 -->
+        <figure class="portfolio-item">
+          <img src="./images/portfolio-02.jpg" alt="Portfolio Item 1" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">
+              A short description could go right here
+            </p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="portfolio-items">
+        <!-- Portfolio Item number 3 -->
+        <figure class="portfolio-item">
+          <img src="./images/portfolio-03.jpg" alt="Portfolio Item 1" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">
+              A short description could go right here
+            </p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="portfolio-items">
+        <!-- Portfolio Item number 4 -->
+        <figure class="portfolio-item">
+          <img src="./images/portfolio-04.jpg" alt="Portfolio Item 1" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">
+              A short description could go right here
+            </p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="portfolio-items">
+        <!-- Portfolio Item number 5 -->
+        <figure class="portfolio-item">
+          <img src="./images/portfolio-05.jpg" alt="Portfolio Item 1" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">
+              A short description could go right here
+            </p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h1>Contact Me</h1>
+
+      <form>
+        <label for="name" class="name"
+          >Name:
+          <input type="text" name="name" id="name" />
+        </label>
+
+        <label for="email" class="email"
+          >E-Mail:
+          <input type="email" name="email" id="email" />
+        </label>
+
+        <label for="message" class="message">
+          Message:
+          <textarea name="message" id="message"></textarea>
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Follow Me On Social Media</p>
+
+      <div class="social-icons">
+        <img class="social-icon" src="./images/twitter.svg" alt="Twitter" />
+        <img class="social-icon" src="./images/instagram.svg" alt="Instagram" />
+        <img class="social-icon" src="./images/github.svg" alt="Github" />
+      </div>
+
+      <p class="copyright">&copy; 2017 Joe Portfolio</p>
+    </footer>
+  </body>
 </html>
