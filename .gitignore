@@ -1,2 +1,12 @@
 # Image files
 dist/images
+
+# src/dist folder that shouldn't be there
+# but that I always forgets to delete
+# have to figure out how to avoid this
+src/dist/
+
+# There are no reason for the folder with the css
+# files are in the project. You just compile the
+# scss files if you download the project
+dist/css
