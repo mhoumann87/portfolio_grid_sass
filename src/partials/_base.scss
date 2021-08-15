@@ -5,6 +5,7 @@ body {
   color: $gray;
   font-family: $ff-s;
   line-height: 1.6;
+  font-size: 0.875rem;
 }
 
 h1,
@@ -18,12 +19,6 @@ h1 {
   color: $dark-blue;
   line-height: 1;
   font-size: 3.125rem;
-
-  span {
-    @include sans-serif($fs: 5.5rem, $color: $accent);
-
-    display: block;
-  }
 }
 
 h2 {
