@@ -6,6 +6,10 @@ body {
   font-family: $ff-s;
   line-height: 1.6;
   font-size: 0.875rem;
+
+  @include mq {
+    font-size: 1.125rem;
+  }
 }
 
 h1,
@@ -19,8 +23,16 @@ h1 {
   color: $accent;
   line-height: 1;
   font-size: 3.125rem;
+
+  @include mq {
+    font-size: 4.25rem;
+  }
 }
 
 h2 {
   @include sans-serif($fs: 2rem, $color: $dark-blue);
+
+  @include mq {
+    font-size: 3rem;
+  }
 }
