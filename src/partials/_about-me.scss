@@ -1,0 +1,52 @@
+@use '../modules/index' as *;
+
+.about-me {
+  @extend %container;
+  @extend %clear-fix;
+  margin-top: 0.5em;
+
+  .about-title {
+    margin-bottom: 0.5em;
+    color: $accent;
+  }
+
+  .about-image {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: auto;
+    max-height: 25em;
+    @media screen and (min-width: 42em) {
+      float: left;
+    }
+  }
+
+  .about-subtitle {
+    margin: 0.5em 0;
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns:
+      [port-start] minmax(6em, 1fr)
+      [name-start] minmax(6em, 1fr)
+      [image-end] 2fr [port-end];
+  }
+
+  .about-image {
+    grid-column: port-start / image-end;
+    grid-row: 1 / 2;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-title {
+    grid-column: name-start / port-end;
+    grid-row: 1 / 2;
+    align-self: end;
+  }
+
+  .about-subtitle,
+  .about-text {
+    grid-column: port / port;
+  }
+}
