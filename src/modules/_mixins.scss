@@ -1,0 +1,13 @@
+@mixin container($width: 90%, $max-width: 50em) {
+  margin: 0 auto;
+  max-width: $max-width;
+  width: $width;
+}
+
+@mixin clear-fix {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

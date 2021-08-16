@@ -16,11 +16,11 @@ p {
 }
 
 h1 {
-  color: $dark-blue;
+  color: $accent;
   line-height: 1;
   font-size: 3.125rem;
 }
 
 h2 {
-  @include sans-serif($fs: 2rem);
+  @include sans-serif($fs: 2rem, $color: $dark-blue);
 }
