@@ -1,8 +1,8 @@
 @use '../modules/index' as *;
 
 .about-me {
-  @extend %container;
-  @extend %clear-fix;
+  @include container;
+  @include clear-fix;
   margin-top: 0.5em;
 
   .about-title {
